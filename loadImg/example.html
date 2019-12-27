@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577444383228&di=0515c80085f793655e76d81473ff2afd&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180606%2F7d4ea87291714d17822ceb4e5a7be694.gif" alt="">
+    <img src="" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577444383228&di=0515c80085f793655e76d81473ff2afd&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180606%2F7d4ea87291714d17822ceb4e5a7be694.gif" alt="">
+    <img src="" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577444383228&di=0515c80085f793655e76d81473ff2afd&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180606%2F7d4ea87291714d17822ceb4e5a7be694.gif" alt="">
+    <img src="" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577444383227&di=348b3d34e86d1c21f528261bafb08b11&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fq_70%2Cc_zoom%2Cw_640%2Fupload%2F20160909%2F7fb90aac673e47fbbf37a6f1e0f08c91_th.jpeg" alt="">
+    <script src="./index.js"></script>
+    <script>
+        let downloadImg = new loadImg({
+            mode: 'dataset',
+            downloadMode: 'one',
+            datasetSrcKey: 'src',
+            update: (img, hasDownloadNum, length) => {
+                console.log(img, hasDownloadNum, length);
+            },
+            success: () => {
+                console.log('完成！');
+            }
+        //     downloadArr: [
+        //     {
+        //         src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577444383228&di=0515c80085f793655e76d81473ff2afd&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180606%2F7d4ea87291714d17822ceb4e5a7be694.gif'
+        //     },
+        //     'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577444383227&di=348b3d34e86d1c21f528261bafb08b11&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fq_70%2Cc_zoom%2Cw_640%2Fupload%2F20160909%2F7fb90aac673e47fbbf37a6f1e0f08c91_th.jpeg'
+        // ]
+        });
+    </script>
+</body>
+</html>
